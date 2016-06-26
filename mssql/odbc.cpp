@@ -35,12 +35,12 @@ void Odbc::InitOdbc()
 
 void Odbc::FreeOdbc()
 {
-    if (sqlenvhandle_ != SQL_NULL_HANDLE)
+    /*if (sqlenvhandle_ != SQL_NULL_HANDLE)
     {
         MAPNIK_LOG_DEBUG(mssql) << "mssql: SQLFreeHandle SQL_HANDLE_ENV";
         SQLFreeHandle(SQL_HANDLE_ENV, sqlenvhandle_);
         sqlenvhandle_ = SQL_NULL_HANDLE;
-    }
+    }*/
 }
 
 SQLHANDLE Odbc::GetEnvHandle()
